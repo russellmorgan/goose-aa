@@ -1,0 +1,37 @@
+// Core vars
+
+:root {
+    --black: #000000;
+    --very-dark-grey: #333333;
+    --light-grey-periwinkle: #d0d6e5;
+    --dark-purple: #4b0b4b;
+    --pale-blue: #c8d2ed;
+    --light-magenta: #ea61ef;
+    --blue-blue: #1949cc;
+    --navy-blue: #001a49;
+    --purple: #774379;
+    --red: #de1e1e;
+    --pale-red: #ffcacc;
+    --green: #2d936c;
+    --pale-green: #8fd694;
+    --goose-yellow: #f7ba29;
+    --light-yellow: #ffde91;
+    --orange: #f77f00;
+    --pale-orange: #ffdeba;
+    --pale-yellow: #ffeec5;
+    --light-grey: #f0f0f0;
+    --slightly-darker-light-gray: #cccccc;
+    --white: #ffffff;
+    --pale-blue-grey: #eef3fa;
+    --darker-grey: #777777;
+    --medium-grey: #999999;
+    --faded-blue: #6279b8;
+    --pale-purple: #e9b7eb;
+    --light-aqua: #93f1d4;
+    --turquoise: #09aba6;
+    --dark-aquamarine: #006c68;
+    --cloud-blue: #cfd7ea;
+  }
+
+// Variable overrides
+$body-bg: var(--medium-grey);

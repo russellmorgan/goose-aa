@@ -1,0 +1,48 @@
+// Core layout classes 
+
+.app {
+    display: grid;
+    grid-template-columns: [sidenav] 260px [content] 1fr;
+    grid-template-rows: [header] 88px [content] 1fr;
+    grid-template-areas:
+        "sidenav header"
+        "sidenav main";
+    &__sidenav {
+        grid-area: sidenav;
+        background: $white;
+        box-shadow: 5px 0 15px 0 rgba(94, 94, 94, 0.15);
+    }
+    &__header {
+        grid-area: header;
+        background: var(--very-dark-grey);
+        color: var(--white);
+    }
+    &__main {
+        grid-area: main;
+    }
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    &__brand {
+        padding: 43px 46px;
+    }
+    &__menu {
+        flex: 1;
+    }
+    &__footer {
+
+    }
+    &__goose {
+        padding-left:34px;
+        padding-top: 20px;
+    }
+    &__stats {
+        display:none; // tmp
+        height: 184px;
+        background-image: linear-gradient(to bottom, #f4f8f9, #f4f8f9), linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    }
+}
