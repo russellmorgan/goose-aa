@@ -16333,6 +16333,10 @@ body {
   flex: 1;
 }
 
+.sidenav__footer {
+  position: relative;
+}
+
 .sidenav__goose {
   padding-left: 34px;
   padding-top: 20px;
