@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Halis";
+    src: url("/fonts/halis-regular.woff") format("woff")
+  }
+
 // Core layout classes 
 
 .app {
@@ -14,11 +19,14 @@
     }
     &__header {
         grid-area: header;
+        display:flex;
+        align-items: center;
         background: var(--very-dark-grey);
         color: var(--white);
     }
     &__main {
         grid-area: main;
+        padding-top: 15px;
     }
 }
 
@@ -46,3 +54,5 @@
         background-image: linear-gradient(to bottom, #f4f8f9, #f4f8f9), linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
     }
 }
+
+// Bootstrap overrides

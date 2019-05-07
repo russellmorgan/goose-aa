@@ -1,7 +1,7 @@
 {
-  "name": "@coreui/coreui-free-bootstrap-admin-template",
+  "name": "AppliedAcademicsUI",
   "version": "2.1.12",
-  "description": "Free Bootstrap Admin Template",
+  "description": "Based on Bootstrap 4 and CoreUI",
   "keywords": [
     "admin",
     "admin panel",

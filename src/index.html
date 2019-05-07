@@ -29,7 +29,19 @@
       <section class="app__sidenav">
         <div class="sidenav">
           <img class="sidenav__brand" src="img/brand/aa-logo.svg" alt="AA">
-          <div class="sidenav__menu">menu</div>
+          <div class="sidenav__menu">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="managers">Managers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mandates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Prediction</a>
+              </li>
+            </ul>
+          </div>
           <div class="sidenav__footer">
             <img class="sidenav__goose" src="img/brand/goose.svg" alt="goose">
             <div class="sidenav__stats">
@@ -40,26 +52,82 @@
       </section>
 
       <!-- header layout -->
-      <section class="app__header">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
+      <section class="app__header position-relative">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col">
               <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb border-bottom-0 mb-0 pb-0">
                   <li class="breadcrumb-item active" aria-current="page">Home</li>
+                  <li class="breadcrumb-item"><a href="#">Managers</a></li>
                 </ol>
               </nav>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary rounded-pill">Summary</button>
+              <button type="button" class="btn btn-primary rounded-pill">Mandate</button>
+              <button type="button" class="btn btn-primary rounded-pill">Skill</button>
+              <button type="button" class="btn btn-primary rounded-pill">Consistency</button>
+
+
+              <button type="button" class="btn btn-primary rounded-pill">6M</button>
+              <button type="button" class="btn btn-primary rounded-pill">1Y</button>
+              <button type="button" class="btn btn-primary rounded-pill">2Y</button>
+              <button type="button" class="btn btn-primary rounded-pill">3Y</button>
+              <button type="button" class="btn btn-primary rounded-pill">4Y</button>
+              <button type="button" class="btn btn-primary rounded-pill">2Y</button>
+            </div>
+            <div class="col-auto">
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Date
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1/2/2019</a>
+                  <a class="dropdown-item" href="#">2/10/2019</a>
+                  <a class="dropdown-item" href="#">All Ranges</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="app__main">main content area</section>
+
+      <!-- main layout area -->
+      <section class="app__main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="card-header">SKILL & OUTCOME</h5>
+                <div class="card-body">
+                  <p class="card-text">Chart content will go here.</p>
+                </div>
+              </div>
+              <div class="card shadow-sm">
+                <h5 class="card-header">PERFORMANCE COMPARISON</h5>
+                <div class="card-body">
+                  <p class="card-text">Chart content will go here.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="card-header">LATEST ACTIVITY</h5>
+                <div class="card-body">
+                  <p class="card-text">Card content goes here.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/pace-progress/pace.min.js"></script>
+    <!-- <script src="node_modules/pace-progress/pace.min.js"></script>
     <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
     <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script> -->
   </body>

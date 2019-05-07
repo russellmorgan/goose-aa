@@ -35,3 +35,10 @@
 
 // Variable overrides
 $body-bg: var(--medium-grey);
+$breadcrumb-bg: transparent;
+$font-family-base: "Halis";
+
+$theme-colors: (
+  "primary": #f7ba29,
+  "danger": #ff4136
+);
