@@ -1,7 +1,12 @@
 @font-face {
     font-family: "Halis";
     src: url("/fonts/halis-regular.woff") format("woff")
-  }
+}
+
+@font-face {
+font-family: "Halis-Bold";
+src: url("/fonts/halis-bold.woff") format("woff")
+}  
 
 // Core layout classes 
 
@@ -23,6 +28,7 @@
         align-items: center;
         background: var(--very-dark-grey);
         color: var(--white);
+        font-family: 'Halis-Bold';
     }
     &__main {
         grid-area: main;
@@ -35,6 +41,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    font-family: 'Halis-Bold';
     &__brand {
         padding: 43px 46px;
     }
@@ -56,3 +63,7 @@
 }
 
 // Bootstrap overrides
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: rgba(247,186,41, 0.1);
+    border-right: 4px solid var(--goose-yellow);
+}

@@ -30,17 +30,38 @@
         <div class="sidenav">
           <img class="sidenav__brand" src="img/brand/aa-logo.svg" alt="AA">
           <div class="sidenav__menu">
-            <ul class="nav flex-column">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="dropdown">
+                    <button class="btn rounded-pill btn-dark dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select Group
+                    </button>
+                    <div class="dropdown-menu w-100 bg-dark text-secondary" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-secondary border-0" href="#">ABC Equities</a>
+                      <a class="dropdown-item text-secondary border-0" href="#">616 Equities LLC</a>
+                      <a class="dropdown-item text-secondary border-0" href="#">Conquest Fund</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="nav nav-justified nav-pills flex-column mt-4 pb-2 border-bottom border-light">
               <li class="nav-item">
-                <a class="nav-link active" href="managers">Managers</a>
+                <a class="nav-link active text-dark rounded-0" href="managers">Managers <span class="text-secondary">(39)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mandates</a>
+                <a class="nav-link text-dark rounded-0 " href="#">Mandates</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Prediction</a>
+                <a class="nav-link text-dark rounded-0 " href="#">Prediction</a>
               </li>
             </ul>
+            <ul class="nav nav-justified nav-pills mt-2 flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-dark rounded-0" href="managers">Settings</a>
+                </li>
+              </ul>
           </div>
           <div class="sidenav__footer">
             <img class="sidenav__goose" src="img/brand/goose.svg" alt="goose">
@@ -64,28 +85,34 @@
               </nav>
             </div>
             <div class="col">
-              <button type="button" class="btn btn-primary rounded-pill">Summary</button>
-              <button type="button" class="btn btn-primary rounded-pill">Mandate</button>
-              <button type="button" class="btn btn-primary rounded-pill">Skill</button>
-              <button type="button" class="btn btn-primary rounded-pill">Consistency</button>
-
-
-              <button type="button" class="btn btn-primary rounded-pill">6M</button>
-              <button type="button" class="btn btn-primary rounded-pill">1Y</button>
-              <button type="button" class="btn btn-primary rounded-pill">2Y</button>
-              <button type="button" class="btn btn-primary rounded-pill">3Y</button>
-              <button type="button" class="btn btn-primary rounded-pill">4Y</button>
-              <button type="button" class="btn btn-primary rounded-pill">2Y</button>
+              <div class="btn-group bg-white rounded-pill p-1">
+                <button type="button" class="btn btn-primary rounded-pill text-white" data-toggle="button">Summary</button>
+                <button type="button" class="btn rounded-pill" data-toggle="button">Mandate</button>
+                <button type="button" class="btn rounded-pill">Skill</button>
+                <button type="button" class="btn rounded-pill">Consistency</button>
+              </div>
+            </div>  
+            <div class="col">
+              <div class="btn-group bg-white rounded-pill p-1">
+                <button type="button" class="btn rounded-pill">6M</button>
+                <button type="button" class="btn rounded-pill">1Y</button>
+                <button type="button" class="btn rounded-pill">2Y</button>
+                <button type="button" class="btn btn-primary text-white rounded-pill">3Y</button>
+                <button type="button" class="btn rounded-pill">4Y</button>
+                <button type="button" class="btn rounded-pill">2Y</button>
+              </div>
             </div>
             <div class="col-auto">
-              <div class="dropdown">
-                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Select Date
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">1/2/2019</a>
-                  <a class="dropdown-item" href="#">2/10/2019</a>
-                  <a class="dropdown-item" href="#">All Ranges</a>
+              <div class="btn-group bg-white rounded-pill p-1">
+                <div class="dropdown">
+                  <button class="btn rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Date
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">1/2/2019</a>
+                    <a class="dropdown-item" href="#">2/10/2019</a>
+                    <a class="dropdown-item" href="#">All Ranges</a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -14,7 +14,7 @@
     --pale-red: #ffcacc;
     --green: #2d936c;
     --pale-green: #8fd694;
-    --goose-yellow: #f7ba29;
+    --goose-yellow: rgba(247,186,41, 1);
     --light-yellow: #ffde91;
     --orange: #f77f00;
     --pale-orange: #ffdeba;
@@ -40,5 +40,6 @@ $font-family-base: "Halis";
 
 $theme-colors: (
   "primary": #f7ba29,
-  "danger": #ff4136
+  "danger": #ff4136,
+  "dark": #000000
 );
