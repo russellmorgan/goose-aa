@@ -10,17 +10,21 @@ font-family: "Halis-Bold";
 src: url("/fonts/halis-bold.woff") format("woff")
 }  
 
-h1, h2, h3, h4, h5, h6 {
+// Make sure anything that is bold by default uses the correct font
+h1, h2, h3, h4, h5, h6, strong, b {
     font-family: "Halis-Bold";
 }
 
 // Core layout classes 
 
-body {
+body { // Keeps scrollbars from ever showing at the browser window level
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.app {
+.app { // Uses a CSS grid which won't work with older versions of IE
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: [sidenav] 260px [content] 1fr;
     grid-template-rows: [header] 88px [content] 1fr;
@@ -42,8 +46,8 @@ body {
     }
     &__main {
         grid-area: main;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: 15px 10px;
+        overflow: hidden;
     }
 }
 
