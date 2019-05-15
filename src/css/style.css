@@ -16301,6 +16301,14 @@ body {
   src: url("/fonts/halis-bold.woff") format("woff");
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Halis-Bold";
+}
+
+body {
+  overflow-y: hidden;
+}
+
 .app {
   display: grid;
   grid-template-columns: [sidenav] 260px [content] 1fr;
@@ -16328,6 +16336,7 @@ body {
 .app__main {
   grid-area: main;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .sidenav {
