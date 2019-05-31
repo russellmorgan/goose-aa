@@ -47,7 +47,7 @@ body { // Keeps scrollbars from ever showing at the browser window level
     &__main {
         grid-area: main;
         padding: 15px 10px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
